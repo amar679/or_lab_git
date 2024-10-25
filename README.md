@@ -5,6 +5,7 @@ Ovaj skup podataka je sadrži informacije o kafićima u Zagrebu kao što su njih
 
 ## Metapodaci
 - **Licenca**: Creative Commons Attribution 4.0 International (CC BY 4.0)
+- **URI**: https://github.com/amar679/or_lab_git
 - **Autor**: Amar Omeragić
 - **Verzija**: 1.0
 - **Jezik**: Hrvatski
@@ -21,4 +22,5 @@ Ovaj skup podataka je sadrži informacije o kafićima u Zagrebu kao što su njih
   - `Specijalna_ponuda`: Specijalne ponude koje kafić nudi (npr. happy hour, brunch)
 - **Format podataka**: CSV i JSON
 - **Veličina skupa podataka**: 10 kafića sa svim pripadajućim karakteristikama
-- **Datum zadnje izmjene**: 23.10.2024.
+- **Datum objave**: 25.10.2024.
+- **Datum zadnje izmjene**: 25.10.2024.

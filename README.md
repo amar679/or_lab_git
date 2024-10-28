@@ -1,7 +1,7 @@
 # Skup podataka: kafići u Zagrebu
 
 ## Opis
-Ovaj skup podataka je sadrži informacije o kafićima u Zagrebu kao što su njihova lokacija, ocjena, tipovi usluga itd.
+Ovaj skup podataka sadrži informacije o kafićima u Zagrebu kao što su njihova lokacija, ocjena, tipovi usluga itd.
 
 ## Metapodaci
 - **Licenca**: Creative Commons Attribution 4.0 International (CC BY 4.0)

@@ -1,0 +1,263 @@
+[{
+    "naziv": "Rituals",
+    "adresa": "Slavenskoga ulica 1",
+    "naziv_kv": "Prečko",
+    "pros_ocjena": 4.5,
+    "broj_recenzija": 764,
+    "radno_vr": "pon-sub 07:00-00:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "otvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "1+1"
+        },
+        {
+            "SpecijalnaPonuda": "kokteli"
+        }
+    ]
+},
+{
+    "naziv": "Metropolis",
+    "adresa": "Trg Ivana kukuljevića 6",
+    "naziv_kv": "Špansko",
+    "pros_ocjena": 4.6,
+    "broj_recenzija": 450,
+    "radno_vr": "pon-sub 07:00-00:00 ned 08:00-00:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "otvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "1+1"
+        }
+    ]
+},
+{
+    "naziv": "Zvjezdana prašina",
+    "adresa": "Gruška ulica 10",
+    "naziv_kv": "Savica",
+    "pros_ocjena": 4.7,
+    "broj_recenzija": 1184,
+    "radno_vr": "pon-ned 07:00-00:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "otvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "1+1"
+        }
+    ]
+},
+{
+    "naziv": "After Eight",
+    "adresa": "Ulica Josipa Slavenskoga 1",
+    "naziv_kv": "Prečko",
+    "pros_ocjena": 4.4,
+    "broj_recenzija": 642,
+    "radno_vr": "pon-ned 07:00-00:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "zatvorena terasa"
+        },
+        {
+            "TipUsluge": "kava za van"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "1+1"
+        }
+    ]
+},
+{
+    "naziv": "Blue Line",
+    "adresa": "Hrgovići 93c",
+    "naziv_kv": "Jarun",
+    "pros_ocjena": 4.7,
+    "broj_recenzija": 85,
+    "radno_vr": "pon-ned 07:00-23:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "zatvorena terasa"
+        },
+        {
+            "TipUsluge": "otvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "kokteli"
+        },
+        {
+            "SpecijalnaPonuda": "1+1"
+        }
+    ]
+},
+{
+    "naziv": "Temple Bar",
+    "adresa": "Cenkovečka ulica 2",
+    "naziv_kv": "Vrbani",
+    "pros_ocjena": 4.6,
+    "broj_recenzija": 584,
+    "radno_vr": "pon-ned 07:00-00:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "otvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "1+1"
+        },
+        {
+            "SpecijalnaPonuda": "kokteli"
+        }
+    ]
+},
+{
+    "naziv": "Espresso bar",
+    "adresa": "Ulica Barutanski jarak 54",
+    "naziv_kv": "Maksimir",
+    "pros_ocjena": 4.4,
+    "broj_recenzija": 99,
+    "radno_vr": "pon-sub 06:00-22:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "otvorena terasa"
+        },
+        {
+            "TipUsluge": "zatvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "1+1"
+        },
+        {
+            "SpecijalnaPonuda": "kokteli"
+        }
+    ]
+},
+{
+    "naziv": "Belfast North Pub",
+    "adresa": "Jablanska ulica 76",
+    "naziv_kv": "Rudeš",
+    "pros_ocjena": 4.6,
+    "broj_recenzija": 453,
+    "radno_vr": "pon-ned 08:00-00:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "otvorena terasa"
+        },
+        {
+            "TipUsluge": "kava za van"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "kokteli"
+        },
+        {
+            "SpecijalnaPonuda": "1+1"
+        }
+    ]
+},
+{
+    "naziv": "Caffe Bar Charlie Chaplin",
+    "adresa": "Koledinečka ulica 1A",
+    "naziv_kv": "Dubrava",
+    "pros_ocjena": 4.8,
+    "broj_recenzija": 617,
+    "radno_vr": "pon-ned 07:00-00:00 sri 07:30-00:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "otvorena terasa"
+        },
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "zatvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "1+1"
+        }
+    ]
+},
+{
+    "naziv": "Robis caffe",
+    "adresa": "Palinovečka ulica 36",
+    "naziv_kv": "Vrbani",
+    "pros_ocjena": 4.8,
+    "broj_recenzija": 593,
+    "radno_vr": "pon-pet 06:30-00:00 sub 07:30-00:00 ned 07:00-23:00",
+    "pet_friendly": true,
+    "wifi": true,
+    "tipovi_usluga": [
+        {
+            "TipUsluge": "kava za van"
+        },
+        {
+            "TipUsluge": "otvorena terasa"
+        }
+    ],
+    "specijalne_ponude": [
+        {
+            "SpecijalnaPonuda": "kokteli"
+        }
+    ]
+}
+]
+
+
+
+
+
+
+
+

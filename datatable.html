@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popis Kafića</title>
+</head>
+<body>
+  <h1>Popis Kafića</h1>
+  
+  <form id="filterForm">
+    <label for="filter">Unesite pojam za pretragu:</label>
+    <input type="text" id="filter" name="filter">
+
+    <label for="filterBy">Pretraži po:</label>
+    <select id="filterBy" name="filterBy">
+      <option value="">Svi atributi</option>
+      <option value="naziv">Naziv</option>
+      <option value="adresa">Adresa</option>
+      <option value="naziv_kv">Kvart</option>
+      <option value="pros_ocjena">Prosječna Ocjena</option>
+      <option value="broj_recenzija">Broj Recenzija</option>
+      <option value="radno_vr">Radno Vrijeme</option>
+    </select>
+
+    <button type="submit">Filtriraj</button>
+  </form>
+
+  
+  <button id="downloadCsv">Preuzmi CSV</button>
+  <button id="downloadJson">Preuzmi JSON</button>
+
+  
+  <table id="cafesTable" border="1">
+    <thead>
+      <tr>
+        <th>Naziv</th>
+        <th>Adresa</th>
+        <th>Kvart</th>
+        <th>Prosječna Ocjena</th>
+        <th>Broj Recenzija</th>
+        <th>Radno Vrijeme</th>
+        <th>Pet Friendly</th>
+        <th>WiFi</th>
+        <th>Tipovi Usluga</th>
+        <th>Specijalne Ponude</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

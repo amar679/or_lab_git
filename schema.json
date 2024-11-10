@@ -1,0 +1,72 @@
+{
+    "$id": "http://example.com/schemas/kafici-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "naziv": {
+          "type": "string",
+          "description": "Naziv kafića"
+        },
+        "adresa": {
+          "type": "string",
+          "description": "Adresa kafića"
+        },
+        "naziv_kv": {
+          "type": "string",
+          "description": "Naziv kvarta u kojem se kafić nalazi"
+        },
+        "pros_ocjena": {
+          "type": "number",
+          "description": "Prosječna ocjena kafića"
+        },
+        "broj_recenzija": {
+          "type": "integer",
+          "description": "Broj recenzija kafića"
+        },
+        "radno_vr": {
+          "type": "string",
+          "description": "Radno vrijeme kafića"
+        },
+        "pet_friendly": {
+          "type": "boolean",
+          "description": "Označava prihvaća li kafić kućne ljubimce"
+        },
+        "wifi": {
+          "type": "boolean",
+          "description": "Označava ima li kafić WiFi"
+        },
+        "tipovi_usluga": {
+          "type": "array",
+          "description": "Tipovi usluga dostupnih u kafiću",
+          "items": {
+            "type": "object",
+            "properties": {
+              "TipUsluge": {
+                "type": "string",
+                "description": "Tip usluge koji kafić nudi, npr. kava za van"
+              }
+            },
+            "required": ["TipUsluge"]
+          }
+        },
+        "specijalne_ponude": {
+          "type": "array",
+          "description": "Specijalne ponude kafića",
+          "items": {
+            "type": "object",
+            "properties": {
+              "SpecijalnaPonuda": {
+                "type": "string",
+                "description": "Naziv specijalne ponude, npr. kokteli"
+              }
+            },
+            "required": ["SpecijalnaPonuda"]
+          }
+        }
+      },
+      "required": ["naziv", "adresa", "naziv_kv", "pros_ocjena", "broj_recenzija", "radno_vr", "pet_friendly", "wifi", "tipovi_usluga", "specijalne_ponude"]
+    }
+  }
+  

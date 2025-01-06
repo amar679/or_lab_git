@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj Kafić</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dodaj Kafić</h1>
+    <form id="kaficForm">
+        <label for="naziv">Naziv kafića:</label>
+        <input type="text" id="naziv" name="naziv" required />
+
+        <label for="adresa">Adresa:</label>
+        <input type="text" id="adresa" name="adresa" required />
+
+        <label for="naziv_kv">Naziv kvarta:</label>
+        <input type="text" id="naziv_kv" name="naziv_kv" required />
+
+        <label for="pros_ocjena">Prosječna ocjena:</label>
+        <input type="number" id="pros_ocjena" name="pros_ocjena" step="0.1" min="0" max="5" required />
+
+        <label for="broj_recenzija">Broj recenzija:</label>
+        <input type="number" id="broj_recenzija" name="broj_recenzija" required />
+
+        <label for="radno_vr">Radno vrijeme:</label>
+        <input type="text" id="radno_vr" name="radno_vr" required />
+
+        <label for="pet_friendly">Pet friendly:</label>
+        <input type="checkbox" id="pet_friendly" name="pet_friendly" />
+
+        <label for="wifi">WiFi:</label>
+        <input type="checkbox" id="wifi" name="wifi" />
+
+        <button type="submit">Dodaj kafić</button>
+    </form>
+    <p id="responseMessage"></p>
+
+    <script>
+        const form = document.getElementById('kaficForm');
+        const responseMessage = document.getElementById('responseMessage');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+        
+            const formData = new FormData(form);
+            const data = {
+                naziv: formData.get('naziv'),
+                adresa: formData.get('adresa'),
+                naziv_kv: formData.get('naziv_kv'),
+                pros_ocjena: parseFloat(formData.get('pros_ocjena')),
+                broj_recenzija: parseInt(formData.get('broj_recenzija')),
+                radno_vr: formData.get('radno_vr'),
+                pet_friendly: formData.get('pet_friendly') === 'on',
+                wifi: formData.get('wifi') === 'on'
+            };
+
+            try {
+            
+                const response = await fetch('http://localhost:3000/api/kafici', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    responseMessage.textContent = 'Kafić uspešno dodat!';
+                    form.reset();
+                } else {
+                    responseMessage.textContent = `Greška: ${result.message}`;
+                }
+            } catch (error) {
+                responseMessage.textContent = 'Greška prilikom dodavanja kafića.';
+            }
+        });
+    </script>
+</body>
+</html>

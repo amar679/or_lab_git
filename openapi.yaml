@@ -1,0 +1,181 @@
+openapi: 3.0.4
+info:
+  title: Kafici u Zagrebu
+  version: 1.0.0
+  license: 
+paths:
+  /api/kafici:
+    get:
+      summary: Vraca listu kafica u Zagrebu
+      responses:
+        '200':
+          description: JSON polje objekata tipa Kafic
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    naziv:
+                      type: string
+                    radno vrijeme:
+                      type: string
+                    wifi:
+                      type: boolean
+                    pet friendly:
+                      type: boolean 
+        '500':
+          description: Posluzitelj ne moze dohvatit listu              
+      post:
+        summary: Dodaje novi kafic u listu
+        responses: 
+          '200': 
+            description: Vraca id uspjesno stvorenog kafica
+            content: 
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    id: 
+                      type: integer
+          '400':
+            description: Neispravan unos kafica
+          '500':
+            description: Objekt nije uspjesno kreiran
+  api/kafici/{id}:
+    get:
+      summary: Vraca kafic sa ID-em zadanim u zahtjevu
+      responses:
+        '200':
+          description: objekt tipa Kafic
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  naziv:
+                    type: string
+                  radno vrijeme:
+                    type: string
+                  wifi:
+                    type: boolean
+                  pet friendly:
+                    type: boolean 
+        '400':
+          description: Neispravan ID
+        '404':
+          description: Resurs nije pronaden
+    put:
+      summary: Izmjenjuje atribute kafica zadanog u zahtjevu
+      responses:
+        '200':
+          description: Vraca izmijenji objekt tipa kafic
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  naziv:
+                    type: string
+                  radno vrijeme:
+                    type: string
+                  wifi:
+                    type: boolean
+                  pet friendly:
+                    type: boolean 
+        '400':
+          description: Krivi unos za izmjenu
+        '500':
+          description: Izmjena nije obavljena      
+    delete:
+      summary: Brise kafic sa ID-em zadanim u zahtjevu
+      responses: 
+        '200':
+          description: Objekt uspjesno obrisan
+        '400':
+          description: Neispravan ID
+        '500':
+          description: Greska pri brisanju
+  api/kafici/kvart/{ime_kvarta}:
+    get:
+      summary: Vraca sve kafice koji se nalaze na zadanom kvartu
+      responses: 
+        '200': 
+          description: Vraca listu kafica kojima je ID kvarta isti
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    naziv:
+                      type: string
+                    radno vrijeme:
+                      type: string
+                    wifi:
+                      type: boolean
+                    pet friendly:
+                      type: boolean 
+        '404':
+          description: Ne postoji kvart s zadanim ID-om
+  api/kafici/pet_friendly:
+    get:
+      summary: Vraca sve kafice koji su pet friendly
+      responses:
+        '200':
+          description: Vraca listu kafica koji su pet friendly
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    naziv:
+                      type: string
+                    radno vrijeme:
+                      type: string
+                    wifi:
+                      type: boolean
+                    pet friendly:
+                      type: boolean 
+          '500':
+            description: Greska pri dohvatu kafica
+  api/kafici/wifi:
+    get:
+      summary: Vraca sve kafice koji imaju wifi
+      responses:
+        '200':
+          description: Vraca listu kafica koji imaju wifi
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    naziv:
+                      type: string
+                    radno vrijeme:
+                      type: string
+                    wifi:
+                      type: boolean
+                    pet friendly:
+                      type: boolean 
+          '500':
+            description: Greska pri dohvatu kafica                      
+
